@@ -19,7 +19,7 @@ main{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
-    border-radius: 5%;
+    border-radius: 50px;
     margin-top: 21px;
 }
 
@@ -154,15 +154,22 @@ hr{
     .container{
         width: 100%;
     }
-    .players{
+    .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .player{
+    .player, .blog{
         flex-direction: column;
     }
+}
 
-    .courses{
-        display: none;
+/* Tablet Devices */
+
+@media only screen and (min-width: 669px) and (max-width: 991px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
